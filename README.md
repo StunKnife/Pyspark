@@ -68,7 +68,18 @@ Você pode rodar script Spark no shell (pyspark). Então, o Spark cria uma sess�
     *. Iniciar Aplicação Spark    
         spark = SparkSession.builder.appName("Exemplo").getOrCreate()
 
-   
+# Principais Estruturas de Dados no Spark
 
- 
+    *. **Resilient Distributed Datasets (RDD)**: Data Set espalhado pelo cluster
+            1. Estrutura básica de baixo nível
+            2. Dados “imutáveis”, distribuídos pelo cluster Em memória
+            3. Pode ser persistindo em disco
+            4. Tolerante a falha
+            5. Operações sobre um RDD criam um novo RDD
+
+    *. **Dataset e DataFrame**: Semelhante a uma tabela de Banco de Dados. Compatíveis com objetos DataFrame do R e Python
+            1. Dataset está disponível apenas em Java e Scala
+            2. Dataset não está disponível em R e Python
+
+O **DataFrame** é a estrutura de dados ideal que os **Data Scientist** **utiliza** no dia a dia com **Python** ou **R**.
  

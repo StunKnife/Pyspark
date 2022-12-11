@@ -83,3 +83,17 @@ Você pode rodar script Spark no shell (pyspark). Então, o Spark cria uma sess�
 
 O **DataFrame** é a estrutura de dados ideal que os **Data Scientist** **utiliza** no dia a dia com **Python** ou **R**.
  
+# RDD
+Criando um RDD a partir de uma lista em Pyspark.
+
+       1. **import pyspark**
+       2. **from pyspark.sql import SparkSession**
+
+       3. **spark = SparkSession.builder.getOrCreate()**
+
+       4. **sc = spark.sparkContext # sc abreviação de  sparkContext**
+
+       * Método parallelize > Construindo uma lista de números de 1 a 10
+            1. rdd = sc.parallelize([1,2,3,4,5,6,7,8,9,10])
+            2. rdd.collect()
+O RDD está criado.

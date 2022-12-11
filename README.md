@@ -112,4 +112,17 @@ O RDD está criado.
       
 **Schema**: Você pode deixar para o Spark inferir a partir de parte dos dados ou você pode definir o schema.
       *. Por exemplo, definir os tipos das colunas.
+      
+# Pyspark com Jupyter Notebook
+
+      * Bibliotecas Necessárias
+          1. import findspark
+          2. findspark.init()
+          3. from pyspark.sql import SparkSession
+          4. spark = SparkSession.builder.getOrCreate()
+          
+          url = "C:/Users/Pc/Desktop/Hartb/machineLearning/PYSPARK/data_sample.txt"
+          df=spark.read.csv(url,header=True)
+
+
 

@@ -30,5 +30,24 @@ O Spark também permite **Replicação** e tem **Tolerância a Falha**.
         1. Não substitui Python
         2. Não substitui SQL ou um SGBDR
 
+ # Estrutura do Spark
  
- <img align='right' src="https://github.com/StunKnife/Pyspark/blob/main/figuras/cluster.png" width="230">
+     1. Driver: Inicializa SparkSession, solicita recursos computacionais do Cluster Manager, transforma as operações em DAGs, distribui estas pelos executers
+     2. Manager: Gerencia os recursos do cluster. Quatro possíveis: built-in standalone, YARN, Mesos e Kubernetes
+     3. Executer: roda em cada nó do cluster executando as tarefas
+ <br><br>
+ <img align="center" src="https://github.com/StunKnife/Pyspark/blob/main/figuras/estrutura.png" width="500">
+
+# Componentes
+
+Quando efetuamos uma aplicação em Spark nos deparamos com as seguintes componentes:
+  1. Job: Tarefa
+  2. Stage: Divisão do Job
+  3. Task: Menor unidade de trabalho. Uma por núcleo e por partição
+
+Estas tarefas podem ser exemplificadas pela ilustação a seguite.
+ 
+
+
+ 
+ 

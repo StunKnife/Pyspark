@@ -38,7 +38,14 @@ O Spark também permite **Replicação** e tem **Tolerância a Falha**.
  <br><br>
  <img align="center" src="https://github.com/StunKnife/Pyspark/blob/main/figuras/estrutura.png" width="500">
 
- 
+# Componentes
+
+Quando efetuamos uma aplicação em Spark nos deparamos com as seguintes componentes:
+  1. Job: Tarefa
+  2. Stage: Divisão do Job
+  3. Task: Menor unidade de trabalho. Uma por núcleo e por partição
+
+Estas tarefas podem ser exemplificadas pela ilustação a seguite.
  
 
 

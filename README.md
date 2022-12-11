@@ -49,8 +49,26 @@ Estas tarefas podem ser exemplificadas pela ilustação a seguite.
  <br><br>
  <img align="center" src="https://github.com/StunKnife/Pyspark/blob/main/figuras/componentes.png" width="500">
 
+# SparkContext e SparkSession
 
+    * O **SparkContext** se trata de uma Conexão transparente com o Cluster
 
+    * **SparkSession** Fornece acesso ao **SparkContext**
+
+# SparkContext / Session
+
+Você pode rodar script Spark no shell (pyspark). Então, o Spark cria uma sessão automaticamente chamada spark
+
+    • Se criar uma aplicação spark, você precisa criar, por exemplo:
+
+    *. Bibliotecas 
+        1. from pyspark.sql import SparkSession
+        2. from pyspark.sql.functions import *
+        
+    *. Iniciar Aplicação Spark    
+        spark = SparkSession.builder.appName("Exemplo").getOrCreate()
+
+   
 
  
  

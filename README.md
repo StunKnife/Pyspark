@@ -46,7 +46,10 @@ Quando efetuamos uma aplicação em Spark nos deparamos com as seguintes compone
   3. Task: Menor unidade de trabalho. Uma por núcleo e por partição
 
 Estas tarefas podem ser exemplificadas pela ilustação a seguite.
- 
+ <br><br>
+ <img align="center" src="https://github.com/StunKnife/Pyspark/blob/main/figuras/componentes.png" width="500">
+
+
 
 
  

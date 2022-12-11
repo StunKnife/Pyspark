@@ -97,3 +97,19 @@ Criando um RDD a partir de uma lista em Pyspark.
             1. rdd = sc.parallelize([1,2,3,4,5,6,7,8,9,10])
             2. rdd.collect()
 O RDD está criado.
+
+# DataFrame
+      1. Tabelas com linhas e colunas
+      2. Imutáveis
+      3. Com schema conhecido
+      4. Linhagem preservada
+      5. Colunas podem ter tipos diferentes
+      6. Existem análises comuns: Agrupar, ordenar, filtrar
+      7. Spark pode otimizar estas analises através de planos de execução
+      
+ **Lazy Evaluation**: O processamento de transformação de fato só ocorre quando há uma Ação
+      *. Permite cria rum plano de excecução otimizado
+      
+**Schema**: Você pode deixar para o Spark inferir a partir de parte dos dados ou você pode definir o schema.
+      *. Por exemplo, definir os tipos das colunas.
+
